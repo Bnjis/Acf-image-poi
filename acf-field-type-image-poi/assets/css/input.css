@@ -1,0 +1,49 @@
+.bl-image-poi {
+    position: relative;
+}
+
+.bl-poi-pin {
+    display: block;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    background-color: #f00;
+
+    position: absolute;
+}
+.bl-poi-pin:active, .bl-poi-pin:visited {
+    z-index: 20;   
+}
+.bl-poi-pin input {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    min-width: 150px;
+
+    background-color: #fff;
+    border: 1px solid red;
+}
+.bl-poi-pin span {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 48px;
+    background-color: #ce2f2f;
+    color: #fff;
+    border: 1px solid #FFF;
+    padding: 5px 10px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bl-poi-pin.opened input, .bl-poi-pin.opened span {
+    display: block;
+}
+
+    
